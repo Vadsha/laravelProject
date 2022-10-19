@@ -57,9 +57,9 @@
                     <img src="{{ asset('storage\products') }}/{{ $product->image }}" id="output" alt="Product Image" class="mt-2" width="120px" height="120px">
                 </div>
             </div>
-            <a href="{{ route('products.index') }}" class="btn btn-outline-primary ms-3">Back</a>
+            <a href="{{ route('products.index') }}" class="btn btn-primary ms-3">Back</a>
 
-            <button class="btn btn-outline-success ms-2">Edit</button>
+            <button class="btn btn-success ms-2">Edit</button>
         </form>
     </div>
 

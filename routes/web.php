@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,7 +28,6 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     Route::resource('brands' , BrandController::class);
     Route::resource('products', ProductController::class);
 });
-
 
 
 Auth::routes();

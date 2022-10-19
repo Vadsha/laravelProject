@@ -4,7 +4,7 @@
 <div class="container bg-transparent">
     <div class="row justify-content-center">
         <div class="col-md-5">
-            <div class="card" style="background-image:url(/images/sky.jpg); background-size:cover;color:transparent; border:none;">
+            <div class="card" style="background-color: #7194cf; background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);">
                 <div class="head mt-5">
                     <h1 class=" display-3 w-75" style="margin-left:90px; pointer-events:none; font-weight:bolder; background-image:url(/images/headtext.jpeg); background-size:cover;color:transparent; -webkit-background-clip:text;">ATHENA</h1>
                 </div>

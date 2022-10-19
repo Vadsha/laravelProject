@@ -19,9 +19,9 @@
 
     <div class="background">
 
-        <div class="conatiner ms-5 w-75" style="color:#ff0000c7;">
+        <div class="conatiner ms-5 w-75 justify-content-center" style="color:#ff0000c7;">
             <div class="row justify-content-center text-center" style="margin-left: 250px;">
-                <div class="head">
+                <div class="head" style="margin-top:-20px;">
                     <h1 class=" display-1 w-75" style="pointer-events:none; font-weight:bolder; background-image:url(/images/headtext.jpeg); background-size:cover;color:transparent; -webkit-background-clip:text;">ATHENA</h1>
                 </div>
                 <div class="slogan">
@@ -30,7 +30,7 @@
         </div>
 
         <div class="ads">
-            <div class="card ">
+            <div class="card">
                 <div class="card-header text-center">
                     <h4 class="text-warning"><i class="fa-solid fa-explosion"></i> Special Discount</h4>
                 </div>
@@ -38,14 +38,14 @@
                     <p class="text-center text-warning h6">10% Off for every Samsung Products</p>
                 </div>
                 <div class="card-footer text-end" style="background-color: #0D0D47">
-                    <a href="" class="text-end text-warning"><i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="{{ route('products.index') }}" class="text-end text-warning"><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
-        <div class="container-fluid mt-4" style="margin-left: 150px">
+        <div class="container-fluid" style="margin-left: 150px">
             <div class="row justify-content-around">
 
-                <div class="mt-3 bg-transparent" style="width: 29%;">
+                <div class=" bg-transparent" style="width: 29%; margin-top:60px;">
                     <div class="panels">
                         <li>
                             <div class="front">
@@ -56,10 +56,10 @@
                             </div>
                         </li>
                     </div>
-                    <p class="label text-center h5">Laptops for your life with the best qualities</p>
+                    <p class="label text-danger text-center h5">Laptops for your life with the best qualities</p>
                 </div>
 
-                <div class="mt-3 bg-transparent" style="width: 29%;">
+                <div class="mt-4 bg-transparent" style="width: 29%;">
                     <div class="panels">
                         <li>
                             <div class="front">
@@ -70,10 +70,10 @@
                             </div>
                         </li>
                     </div>
-                    <p class="label text-center h5">Global smart phones with special offers</p>
+                    <p class="label text-center text-danger h5">Global smart phones with special offers</p>
                 </div>
 
-                <div class="mt-3 bg-transparent" style="width: 29%;">
+                <div class=" bg-transparent" style="width: 29%; margin-top:60px;">
                     <div class="panels">
                         <li>
                             <div class="front">
@@ -84,7 +84,7 @@
                             </div>
                         </li>
                     </div>
-                    <p class="label text-center h5">Cameras to capture everything</p>
+                    <p class="label text-danger text-center h5">Cameras to capture the memories of your life</p>
                 </div>
 
             </div>

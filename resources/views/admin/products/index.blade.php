@@ -34,7 +34,7 @@ View Products
                             <th class="text-center">Id</th>
                             <th class="text-center">Image</th>
                             <th class="text-center">Title</th>
-                            <th class="text-center"><a href="{{ route('products.create') }}" class="btn btn-outline-success btn-sm">Create</a></th>
+                            <th class="text-center"><a href="{{ route('products.create') }}" class="btn btn-success btn-sm">Create</a></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -45,7 +45,7 @@ View Products
                                 <img src="{{ asset('storage\products') }}/{{ $product->image }}" alt="Product Image" width="50px" height="60px">
                             </td>
                             <td class="text-center">{{ $product->title }}</td>
-                            <td class="text-center"><a href="{{ route('products.show', $product->id) }}" class="btn btn-outline-info btn-sm">Show</a></td>
+                            <td class="text-center"><a href="{{ route('products.show', $product->id) }}" class="btn btn-info btn-sm">Show</a></td>
 
                         </tr>
                         @endforeach
