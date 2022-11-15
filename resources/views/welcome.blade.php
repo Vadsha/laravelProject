@@ -94,18 +94,12 @@
             <div class="row">
                 <div class="text-center text-lg" style="margin-left: 130px">
                     <div class="h-50">
-                        @if (Route::has('login'))
-                            <div>
-                                @auth
-                                    <a href="{{ url('/home') }}" class="btn btn-success text-decpration-none">Home</a>
-                                @else
-                                    <a href="{{ route('login') }}" class=" btn btn-primary text-decoration-none">Log in</a>
-
-                                    @if (Route::has('register'))
-                                        <a href="{{ route('register') }}" class="btn btn-primary ml-2 text-decoration-none">Register</a>
-                                    @endif
-                                @endauth
-                            </div>
+                        @if (auth('customer')->check())
+                            <a href="" class="btn btn-primary">Home</a>
+                            <a href="{{ route('customer_logout') }}" class="btn btn-danger">Logout</a>
+                        @else
+                            <a href="{{ route('customer_loginView') }}" class="btn btn-primary">Login</a>
+                            <a href="{{ route('customer_register') }}" class="btn btn-primary">Register</a>
                         @endif
                     </div>
                 </div>

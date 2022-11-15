@@ -25,11 +25,12 @@
         <div class="row justify-content-center">
             <div class="card col-5 mt-5 bg-transparent">
                 <div class="head mt-5">
-                    <h1 class=" display-3 w-75" style="margin-left:90px; pointer-events:none; font-weight:bolder; background-image:url(/images/headtext.jpeg); background-size:cover;color:transparent; -webkit-background-clip:text;">ATHENA</h1>
+                    <h1 class=" display-3 w-75" style="margin-left:110px; pointer-events:none; font-weight:bolder; background-image:url(/images/headtext.jpeg); background-size:cover;color:transparent; -webkit-background-clip:text;">ATHENA</h1>
                 </div>
                 <div class="body">
 
-                    <form action="" method="">
+                    <form action="{{ route('customer_login') }}" method="POST">
+                        @csrf
                         <div class="form-group d-flex mt-3">
                             <div class="col-4">
                                 <label style="font-size: large;" class="ms-4" for="email">Email Address</label>

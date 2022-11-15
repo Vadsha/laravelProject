@@ -5,6 +5,7 @@ use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ProductController;
+use App\Models\Customer;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,6 +20,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    // return (Customer::all());
+    // dd(auth('customer')->check());
     return view('welcome');
 });
 
@@ -34,3 +37,14 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::prefix('customer')->middleware('guest:customer')->group(function () {
+    Route::get('/register' , [CustomerController::class , 'registerView'])->name('customer_register');
+    Route::post('/register', [CustomerController::class , 'registerSubmit'])->name('register_submit');
+    Route::get('/login' , [CustomerController::class , 'loginView'])->name('customer_loginView');
+    Route::post('/login', [CustomerController::class, 'login'])->name('customer_login');
+});
+
+
+Route::get('customer/logout', [CustomerController::class, 'logout'])->middleware('customer')->name('customer_logout');
+
+Route::get('customer/test', [CustomerController::class, 'test']);
