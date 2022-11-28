@@ -46,5 +46,3 @@ Route::prefix('customer')->middleware('guest:customer')->group(function () {
 
 
 Route::get('customer/logout', [CustomerController::class, 'logout'])->middleware('customer')->name('customer_logout');
-
-Route::get('customer/test', [CustomerController::class, 'test']);
